@@ -1,0 +1,42 @@
+@echo off
+echo Paso 1: Creando archivo mytext.txt con el contenido "Hola Mundo"
+echo Hola Mundo > mytext.txt
+echo.
+pause
+
+echo.
+echo Paso 2: Mostrando el contenido del archivo mytext.txt
+type mytext.txt
+echo.
+pause
+
+echo.
+echo Paso 3: Creando subdirectorio backup
+md backup
+echo.
+pause
+
+echo.
+echo Paso 4: Copiando mytext.txt al subdirectorio backup
+copy mytext.txt backup
+echo.
+pause
+
+echo.
+echo Paso 5: Listando el contenido del subdirectorio backup
+dir backup
+echo.
+pause
+
+echo.
+echo Paso 6: Eliminando el archivo mytext.txt del subdirectorio backup
+del backup\mytext.txt
+echo.
+pause
+
+echo.
+echo Paso 7: Eliminando el subdirectorio backup
+rd backup
+echo.
+echo Script completado.
+pause
