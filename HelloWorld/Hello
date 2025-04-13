@@ -1,0 +1,28 @@
+@echo off
+echo Hello World
+echo.
+pause
+
+echo.
+echo Listando el contenido del directorio actual:
+dir
+echo.
+pause
+
+echo.
+echo Creando subdirectorio Test...
+md Test
+echo.
+pause
+
+echo.
+echo Cambiando al subdirectorio Test...
+cd Test
+echo.
+pause
+
+echo.
+echo Listando el contenido del subdirectorio Test:
+dir
+echo.
+pause
